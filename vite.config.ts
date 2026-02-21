@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
-
 export default defineConfig({
   plugins: [react()],
-  base: repoName ? `/${repoName}/` : '/',
+  // Use relative asset paths so the build works whether the site is hosted at
+  // /, /<repo>/, or opened from a rewritten URL without a trailing slash.
+  base: './',
 })
