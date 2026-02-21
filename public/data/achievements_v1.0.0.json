@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2025-12-10",
+  "categories": [
+    {
+      "id": "cat_story",
+      "name": "Story",
+      "items": [
+        {
+          "id": "achv_001",
+          "name": "First Steps",
+          "description": "Complete the opening quest.",
+          "optional_meta": {
+            "points": 10,
+            "wiki_url": "https://example.com/wiki/first-steps"
+          }
+        },
+        {
+          "id": "achv_002",
+          "name": "Village Savior",
+          "description": "Defeat the first boss.",
+          "optional_meta": {
+            "points": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat_exploration",
+      "name": "Exploration",
+      "items": [
+        {
+          "id": "achv_003",
+          "name": "Trailblazer",
+          "description": "Discover 5 landmarks."
+        }
+      ]
+    }
+  ]
+}
