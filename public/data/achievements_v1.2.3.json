@@ -1,0 +1,49 @@
+{
+  "version": "1.2.3",
+  "updated_at": "2026-02-21",
+  "categories": [
+    {
+      "id": "cat_story",
+      "name": "Story",
+      "items": [
+        {
+          "id": "achv_001",
+          "name": "First Steps",
+          "description": "Complete the opening quest.",
+          "optional_meta": {
+            "points": 10,
+            "wiki_url": "https://example.com/wiki/first-steps"
+          }
+        },
+        {
+          "id": "achv_004",
+          "name": "Sky Citadel",
+          "description": "Reach the Sky Citadel chapter.",
+          "optional_meta": {
+            "points": 50,
+            "wiki_url": "https://example.com/wiki/sky-citadel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat_combat",
+      "name": "Combat",
+      "items": [
+        {
+          "id": "achv_005",
+          "name": "Unstoppable",
+          "description": "Win 25 battles without using potions.",
+          "optional_meta": {
+            "points": 30
+          }
+        },
+        {
+          "id": "achv_006",
+          "name": "Perfect Timing",
+          "description": "Perform 20 perfect parries."
+        }
+      ]
+    }
+  ]
+}
