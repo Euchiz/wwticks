@@ -60,3 +60,22 @@ This repository includes `.github/workflows/deploy-pages.yml`.
 1. In GitHub repo settings, enable **Pages** and set source to **GitHub Actions**.
 2. Push to `main` to trigger deployment.
 3. `vite.config.ts` sets `base` automatically from `GITHUB_REPOSITORY` in CI.
+
+## Sync achievements from official wiki
+
+Use the sync module to fetch the official wiki page and generate a versioned JSON file in `public/data`:
+
+```bash
+npm run sync:achievements -- --version 2026-02-21
+```
+
+Optional flags:
+
+- `--url <source>` override source page URL
+- `--out-dir <path>` override output directory
+- `--category <name>` fallback category name when category data is missing
+
+This command writes:
+
+- `public/data/achievements_v{version}.json`
+- `public/data/index.json` (updates `latest` and appends version)
