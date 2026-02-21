@@ -39,6 +39,24 @@ Static React + TypeScript app for tracking game achievements by list version. Bu
 }
 ```
 
+
+## Sync data from official Kuro Wiki
+
+Use the built-in sync module to fetch the full achievement list and generate the GitHub Pages JSON format:
+
+```bash
+npm run sync:achievements -- --version 1.3.0
+```
+
+Optional flags:
+
+- `--source <url>`: override source page URL
+- `--output <path>`: override output file (default `public/data/achievements_v{version}.json`)
+- `--index <path>`: override version index file (default `public/data/index.json`)
+- `--input <html file>`: parse from a saved HTML file (useful when remote access is blocked)
+
+The script updates both the version data file and `public/data/index.json` so the new list is selectable in the app.
+
 ## Local development
 
 ```bash
